@@ -14,7 +14,7 @@ class ProvincePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           "Province",
-          style: Get.textTheme.headline4,
+          style: Get.textTheme.headline4?.copyWith(color: Colors.white),
         ),
       ),
       body: const ProvincePageView(),
@@ -84,8 +84,9 @@ class ItemProvince extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
               child: NetworkImageView.loadUrl(
                 url: province.url,
-                width: 80,
-                height: 80,
+                fit: BoxFit.fill,
+                width: 120,
+                height: 120,
               ),
             ),
             Text(

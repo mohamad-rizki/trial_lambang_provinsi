@@ -1,3 +1,3 @@
 class AppRoute {
-  static const kProvinceRoute = "/province";
+  static const kProvinceRoute = "/";
 }
